@@ -2,7 +2,9 @@ from http import HTTPStatus
 
 import requests
 
-API_KEY = "f6f95dbec53646ea91b0fb672f7336df"
+from config import get_news_api_key
+
+API_KEY = get_news_api_key()
 
 BASE_URL = "https://newsapi.org/v2"
 URL_TOP_HEADLINES = "/top-headlines"
